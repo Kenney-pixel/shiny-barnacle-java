@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<project name="trygeometry" default="execute" >
+	<description>Compiles and runs a simple program</description>
+
+	<target name="init">
+		<mkdir dir="build/classes" />
+		<mkdir dir="dist" />
+	</target>
+
+	<target name="compile" depends="init" description="Compiles the source code">
+		<javac srcdir="src" destdir="build/classes" />
+	</target>
+
+	<target name="archive" depends="compile" description="Create the JAR file">
+		<jar destfile="dist/project.jar" basedir="build/classes" />
+	</target>
+
+	<target name="clean" depends="init" description="Removes the temporary directories used">
+		<delete dir="build" />
+		<delete dir="dist" />
+	</target>
+
+	<target name="execute" depends="compile" description="Runs the program">
+		<echo level="warning" message="running" />
+		<java classname="ph.cloudberry.geometry.TryGeometry" classpath="build/classes"></java>
+	</target>
+</project>
