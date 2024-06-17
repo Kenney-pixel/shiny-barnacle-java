@@ -30,6 +30,26 @@ public class Point {
 		return Double.toString(x) + ", " + y;
 	}
 
+	// Retrieve the x coordinate
+	public double getX() {
+		return x;
+	}
+
+	// Retrieve the y coordinate
+	public double getY() {
+		return y;
+	}
+
+	// Set the x coordinate
+	public void setX(double inputX) {
+		x = inputX;
+	}
+
+	// Set the y coordinate
+	public void setY(double inputY) {
+		y = inputY;
+	}
+
 	// Coordinates of the point
 	private double x;
 	private double y;
