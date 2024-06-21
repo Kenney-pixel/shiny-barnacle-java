@@ -17,5 +17,8 @@ public class Line {
 		return start.distance(end);
 	}
 
+	// Return a point as the intersection of two lines -- called from a Line object
+	public Point intersects(final Line line1) {
+		Point localPoint = new Point(0,0);
 
 
