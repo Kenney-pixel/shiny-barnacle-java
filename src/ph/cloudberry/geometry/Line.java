@@ -21,4 +21,8 @@ public class Line {
 	public Point intersects(final Line line1) {
 		Point localPoint = new Point(0,0);
 
+		double num = (end.getY() - start.getY()) * (start.getX() - line1.start.getX())
+			- (end.getX() - start.getX()) * (start.getY() - line1.start.getY());
+
+		double denom = 
 
