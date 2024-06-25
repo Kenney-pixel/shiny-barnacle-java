@@ -24,5 +24,6 @@ public class Line {
 		double num = (end.getY() - start.getY()) * (start.getX() - line1.start.getX())
 			- (end.getX() - start.getX()) * (start.getY() - line1.start.getY());
 
-		double denom = 
+		double denom = (end.getY() - start.getY()) * (line1.end.getX() - line1.start.getX())
+		       - (end.getX() - start.getX()) * (line1.end.getY() - line1.start.getY());	
 
