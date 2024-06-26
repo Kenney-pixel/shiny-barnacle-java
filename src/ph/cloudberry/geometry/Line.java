@@ -27,3 +27,20 @@ public class Line {
 		double denom = (end.getY() - start.getY()) * (line1.end.getX() - line1.start.getX())
 		       - (end.getX() - start.getX()) * (line1.end.getY() - line1.start.getY());	
 
+		localPoint.setX(line1.start.getX() + (line1.end.getX() - line1.start.getX())*num/denom);
+		localPoint.setY(line1.start.getY() + (line1.end.getY() - line1.start.getY())*num/denom);
+
+		return localPoint;
+	}
+
+	// Convert a line to a string
+	public String toString() {
+		return "(" + start + ") : (" + end + ")";
+	}
+
+	// Data members
+	Point start;
+	Point end;
+}
+
+
