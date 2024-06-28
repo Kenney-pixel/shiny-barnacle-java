@@ -1,3 +1,5 @@
+package ph.cloudberry.geometry;
+
 import static java.lang.Math.sqrt;
 
 public class Point {

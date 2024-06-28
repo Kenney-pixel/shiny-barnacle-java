@@ -8,7 +8,7 @@
 	</target>
 
 	<target name="compile" depends="init" description="Compiles the source code">
-		<javac srcdir="src" destdir="build/classes" />
+		<javac srcdir="src" destdir="build/classes" includeantruntime="false"/>
 	</target>
 
 	<target name="archive" depends="compile" description="Create the JAR file">
@@ -22,6 +22,6 @@
 
 	<target name="execute" depends="compile" description="Runs the program">
 		<echo level="warning" message="running" />
-		<java classname="ph.cloudberry.geometry.TryGeometry" classpath="build/classes"></java>
+		<java classname="ph.cloudberry.geometry.TryPackage" classpath="build/classes"></java>
 	</target>
 </project>

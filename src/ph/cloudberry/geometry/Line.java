@@ -1,4 +1,4 @@
-ph.cloudberry.geometry
+package ph.cloudberry.geometry;
 
 public class Line {
 	public Line(final Point start, final Point end) {
@@ -42,5 +42,3 @@ public class Line {
 	Point start;
 	Point end;
 }
-
-
